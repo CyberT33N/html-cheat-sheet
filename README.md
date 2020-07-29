@@ -52,3 +52,20 @@ onblur="this.placeholder = 'enter your text'" />
 
 <br />
 <br />
+
+## Load .js files faster
+```html
+<!-- https://www.youtube.com/watch?v=BMuFBYw91UQ  -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+``` 
+
+<br />
+<br />
+
+
+ _____________________________________________________
+ _____________________________________________________
+
+
+<br />
+<br />
