@@ -31,3 +31,24 @@ HTML Cheat Sheet with the most needed stuff..
 
 <br />
 <br />
+
+
+## Hide placeholder on input focus
+```html
+<input 
+type="text" 
+placeholder="enter your text" 
+onfocus="this.placeholder = ''"
+onblur="this.placeholder = 'enter your text'" />
+``` 
+
+<br />
+<br />
+
+
+ _____________________________________________________
+ _____________________________________________________
+
+
+<br />
+<br />
