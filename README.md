@@ -55,7 +55,9 @@ onblur="this.placeholder = 'enter your text'" />
 
 ## Load .js files faster
 ```html
-<!-- https://www.youtube.com/watch?v=BMuFBYw91UQ  -->
+<!-- https://www.youtube.com/watch?v=BMuFBYw91UQ
+If you specify both, async takes precedence on modern browsers, while older browsers that support defer but not async will fallback to defer.
+-->
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 ``` 
 
