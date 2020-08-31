@@ -12,27 +12,36 @@ HTML Cheat Sheet with the most needed stuff..
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
+<!-- redirect to different page when user got no javascript -->
 <noscript><meta http-equiv="refresh" content="0; url=./nojs/index.html" /></noscript>
+  
+<!-- set description and title for SEO-->
 <meta
 name="description"
 content="Dennis Demand | CyberT33N (Software Developer & WEB Designer)
 ► Node.js ● Scrap/Crawl ● Automate ● Electron.js ● WEB Design ◄">
 <title>Resume - Dennis Demand (Software Developer & WEB Designer)</title>
+  
+<!-- set viewport for responsive and enable utf8-->
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 <meta charset="UTF-8">
+  
+ <!-- prevent cache -->
 <meta http-equiv='cache-control' content='no-cache, no-store, must-revalidate'>
 <meta http-equiv='expires' content='0'>
 <meta http-equiv='pragma' content='no-cache'>
 
-  <!-- run fullscreen -->
+  
+<!-- run fullscreen on web apps -->
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 
-  <!-- Style user adress bar -->
- <meta name="theme-color" content="#5c5c5c"/>
+<!-- Style user adress bar -->
+<meta name="theme-color" content="#5c5c5c"/>
 
 
- 
+ <!-- your stlyesheets here -->
 <link rel="stylesheet" href="css/style.css"/>
 
 </head>
@@ -45,7 +54,7 @@ content="Dennis Demand | CyberT33N (Software Developer & WEB Designer)
 <body>
  
  
-
+ <!-- your scripts here - if possible use defer & async -->
 <script src="js/scripts.js" defer> </script>
 </body>
 </html>
