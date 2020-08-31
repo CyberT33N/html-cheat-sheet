@@ -5,6 +5,9 @@ HTML Cheat Sheet with the most needed stuff..
 <br />
 <br />
 
+# Meta List
+- https://gist.github.com/lancejpollard/1978404
+
 
 
 # Default Layout
