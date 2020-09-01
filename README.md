@@ -114,7 +114,7 @@ content="Dennis Demand | CyberT33N (Software Developer & WEB Designer)
 
 
   <!-- set viewport for responsive and enable utf8-->
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"/>
   <meta charset="UTF-8"/>
 
    <!-- prevent cache -->
