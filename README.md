@@ -13,8 +13,9 @@ HTML Cheat Sheet with the most needed stuff..
 
 
 ## Object
+```html
 <object id="svg1" data="/static/image.svg" type="image/svg+xml"></object>
-
+```
 
 
 
