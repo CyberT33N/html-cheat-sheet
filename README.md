@@ -5,6 +5,31 @@ HTML Cheat Sheet with the most needed stuff..
 <br />
 <br />
 
+
+
+
+
+# Tags
+
+
+## Object
+<object id="svg1" data="/static/image.svg" type="image/svg+xml"></object>
+
+
+
+
+<br />
+<br />
+
+
+ _____________________________________________________
+ _____________________________________________________
+
+
+<br />
+<br />
+
+
 # Meta List
 - https://gist.github.com/lancejpollard/1978404
 
