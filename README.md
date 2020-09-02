@@ -31,6 +31,31 @@ HTML Cheat Sheet with the most needed stuff..
 <br />
 
 
+
+
+# Attribute
+
+
+## onload
+```html
+// execute something when element is loaded..
+<object id="svg1" data="/static/image.svg" type="image/svg+xml" onload="layertwoSVGloaded()"></object>
+```
+
+
+
+<br />
+<br />
+
+
+ _____________________________________________________
+ _____________________________________________________
+
+
+<br />
+<br />
+
+
 # Meta List
 - https://gist.github.com/lancejpollard/1978404
 
