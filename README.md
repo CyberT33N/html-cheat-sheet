@@ -177,6 +177,7 @@ content="Dennis Demand | CyberT33N (Software Developer & WEB Designer)
   <!-- run fullscreen on web apps -->
   <meta name="apple-mobile-web-app-capable" content="yes"/>
   <meta name="mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 
   <!-- Style user adress bar -->
  <meta name="theme-color" content="#5c5c5c"/>
