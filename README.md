@@ -11,24 +11,43 @@ HTML Cheat Sheet with the most needed stuff..
 
 # Tags
 
+<br><br>
 
-## Object
+## video (https://www.w3schools.com/html/html5_video.asp)
 ```html
 <object id="svg1" data="/static/image.svg" type="image/svg+xml"></object>
 ```
 
+<br><br>
+
+## video
+```html
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+```
+
+- Start/Stop video (https://www.w3schools.com/tags/av_met_play.asp)
+```js
+var vid = document.getElementById("myVideo");
+
+function playVid() {
+    vid.play();
+}
+
+function pauseVid() {
+    vid.pause();
+}
+```
 
 
-<br />
-<br />
 
-
+<br><br>
  _____________________________________________________
  _____________________________________________________
-
-
-<br />
-<br />
+<br><br>
 
 
 
