@@ -13,14 +13,35 @@ HTML Cheat Sheet with the most needed stuff..
 
 <br><br>
 
-## video (https://www.w3schools.com/html/html5_video.asp)
+## object
+
+<br><br>
+
+#### usw svg with object
 ```html
 <object id="svg1" data="/static/image.svg" type="image/svg+xml"></object>
 ```
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
 <br><br>
 
-## video
+
+## video  (https://www.w3schools.com/html/html5_video.asp)
 ```html
 <video width="320" height="240" controls>
   <source src="movie.mp4" type="video/mp4">
