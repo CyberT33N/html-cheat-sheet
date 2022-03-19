@@ -37,8 +37,113 @@ HTML Cheat Sheet with the most needed stuff..
 
 
 
+
+
+
+
 <br><br>
+__________________________________
+__________________________________
 <br><br>
+
+
+
+
+
+<br><br>
+
+# SVG
+
+cbr><br>
+
+## Use inline svg from external file
+- The following technics below will use inline svg that you can modify each path with css if you want
+
+<br><br>
+
+### Method 1 - Jquery Load
+```html
+# a.html
+<html> 
+  <head> 
+    <script src="jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#includedContent").load("b.html"); 
+    });
+    </script> 
+  </head> 
+
+  <body> 
+     <div id="includedContent"></div>
+  </body> 
+</html>
+
+
+# b.html
+<svg>..</svg>
+```
+
+<br><br>
+
+### Method 2 - svg-loader (https://github.com/shubhamjain/svg-loader)
+```html
+# a.html
+<html> 
+  <head> 
+    <script type="text/javascript" src="svg-loader.min.js" async></script>
+  </head> 
+
+  <body> 
+     <svg data-src="./b.svg"
+    width="50"
+    height="50"
+    fill="currentColor"
+    style="color: purple;"></svg>
+  </body> 
+</html>
+
+
+# b.html
+<svg>..</svg>
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+__________________________________
+__________________________________
+<br><br>
+
 
 
 ## video  (https://www.w3schools.com/html/html5_video.asp)
