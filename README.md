@@ -205,6 +205,67 @@ function pauseVid() {
 - https://gist.github.com/lancejpollard/1978404
 
 
+### Social Media/Open Graph Tags: Summary
+
+**Purpose**:  
+Open Graph tags enhance how your website appears when shared on social media platforms or messaging apps. They improve visual representation and boost click-through rates.
+
+#### Key Tags:
+- **`og:title`**: The title of the content being shared (e.g., your website name or a specific article).  
+- **`og:description`**: A short, engaging description to encourage clicks.  
+- **`og:image`**: The preview image (thumbnail) displayed in the link preview.  
+- **`og:url`**: The URL of the shared page, ensuring the correct link is used.  
+- **`og:type`**: The type of content (e.g., `website`, `article`, or `video`), helping platforms categorize it.  
+- **`og:locale`**: Specifies language and region (e.g., `en_US` for US English, `de_DE` for German).
+
+---
+
+#### What is `og:image`?
+- **Purpose**: The preview image shown when your link is shared.  
+- **Optimal Size**: 1200x630 pixels for best results on most platforms.  
+- **Format**: PNG (high quality) or JPEG (smaller file size).  
+- **Content**: Should represent your brand or service visually, e.g., your logo or a key product screenshot.  
+- **Location**: Stored on your server, e.g., `https://qubine.ai/assets/img/og-image.png`.
+
+---
+
+#### Example:  
+When sharing your site `https://qubine.ai` on Facebook:  
+- A **thumbnail** (e.g., `og:image.png`) appears, showcasing your AI tool or branding.  
+- A **title** like *"Qubine | Ultra-Realistic Text-to-Video AI Models"*.  
+- A **description** such as: *"Experience the future of digital storytelling with ultra-realistic AI-powered video generation."*
+
+This setup ensures your shared links are visually appealing and drive engagement. 👌
+```
+<!-- Social Media/Open Graph Tags -->
+<meta property="og:title" content="xxxxxxxxxx | Ultra-Realistic Text-to-Video AI Models">
+<meta property="og:description" content="Step into the future of digital storytelling with xxxxx">
+<meta property="og:image" content="https://xxxxxx.com/assets/img/og-image.png">
+<meta property="og:url" content="https://xxxxx.com">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+```
+
+
+
+
+
+
+
+
+
+<br><br>
+<br><br>
+______________________________
+
+<br><br>
+<br><br>
+
+
+
+
+
+
 
 # Default Layout
 ```html
