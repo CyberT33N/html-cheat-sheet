@@ -146,16 +146,23 @@ __________________________________
 
 
 
-## video  (https://www.w3schools.com/html/html5_video.asp)
+## video (https://www.w3schools.com/html/html5_video.asp)
 ```html
-<video width="320" height="240" controls>
-  <source src="movie.mp4" type="video/mp4">
-  <source src="movie.ogg" type="video/ogg">
-Your browser does not support the video tag.
+ <video autoplay muted loop playsinline preload="metadata" class="img-fluid rounded-1 img-fadeIn-1">
+  <source src="./assets/videos/1.webm" type="video/webm">
+  <source src="./assets/videos/1.mp4" type="video/mp4">
+  Your Browser does not support this format.
 </video>
 ```
+- Autplay only working with muted
+- Choose webm as first source and if the browser does not support it then fallback to mp4
+- https://github.com/CyberT33N/ffmpeg-cheat-sheet/blob/main/README.md#mp4-to-webm
+- https://github.com/CyberT33N/ffmpeg-cheat-sheet/blob/main/README.md#option-2-max-compress
 
-- Start/Stop video (https://www.w3schools.com/tags/av_met_play.asp)
+
+<br><br>
+
+### Start/Stop video (https://www.w3schools.com/tags/av_met_play.asp)
 ```js
 var vid = document.getElementById("myVideo");
 
