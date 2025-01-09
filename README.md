@@ -1,12 +1,117 @@
 # HTML Cheat Sheet
 HTML Cheat Sheet with the most needed stuff..
-<br />
-<br />
-<br />
-<br />
 
 
 
+
+
+
+
+
+
+# API
+
+<br><br>
+
+## Popover API
+- https://developer.mozilla.org/en-US/docs/Web/API/Popover_API
+- The Popover API provides developers with a standard, consistent, flexible mechanism for displaying popover content on top of other page content. Popover content can be controlled either declaratively using HTML attributes, or via JavaScript.
+
+
+Die Popover API ist eine moderne Möglichkeit, um **einblendbare Elemente** in HTML zu erstellen, ohne auf komplexe JavaScript-Lösungen oder externe Bibliotheken angewiesen zu sein. Sie bietet eine **native** und **zugängliche** Methode, um Popovers, Tooltips, Menüs und ähnliche UI-Elemente zu realisieren.
+
+### Kernkonzepte
+
+1.  **`popover` Attribut:**
+    *   Wird auf dem **Popover-Element** selbst verwendet (dem Element, das eingeblendet wird).
+    *   Akzeptiert zwei Werte:
+        *   `auto`: Das Popover wird standardmäßig eingeblendet und schließt sich, wenn man außerhalb klickt (oder den ESC-Key drückt).
+        *   `manual`: Das Popover wird manuell über JavaScript (mit `showPopover()` oder `hidePopover()`) ein- und ausgeblendet.
+
+2.  **`popovertarget` Attribut:**
+    *   Wird auf dem **Auslöser-Element** verwendet (z.B. ein Button), der das Popover steuert.
+    *   Der Wert ist die `id` des Popover-Elements.
+
+### Einfache Beispiele
+
+**Beispiel 1: `auto`-Popover (Ein-/Ausblenden per Klick)**
+
+```html
+<button popovertarget="my-popover">Zeige Popover</button>
+<div id="my-popover" popover>
+  <p>Das ist mein Popover!</p>
+</div>
+```
+
+Beispiel 2: manual-Popover (Ein-/Ausblenden mit JavaScript)
+
+```html
+<button id="open-popover-btn" popovertarget="my-manual-popover">Öffne Popover</button>
+<button id="close-popover-btn" >Schliesse Popover</button>
+<div id="my-manual-popover" popover="manual">
+  <p>Manuelles Popover</p>
+  
+</div>
+
+<script>
+  const openBtn = document.getElementById('open-popover-btn');
+  const closeBtn = document.getElementById('close-popover-btn');
+  const popover = document.getElementById('my-manual-popover');
+
+  openBtn.addEventListener('click', () => popover.showPopover());
+  closeBtn.addEventListener('click', () => popover.hidePopover());
+  
+
+</script>
+```
+
+## JavaScript Methoden
+
+element.showPopover(): Zeigt das Popover-Element an. Funktioniert nur bei manual Popovers.
+
+element.hidePopover(): Versteckt das Popover-Element. Funktioniert nur bei manual Popovers.
+
+element.togglePopover(): Wechselt die Sichtbarkeit des Popovers.
+
+## Vorteile
+
+Einfachheit: Weniger Code, keine komplexen Skripte für einfache Popover-Funktionalität.
+
+Zugänglichkeit: Integrierte Unterstützung für Tastaturnavigation und Screenreader.
+
+Performance: Native Browser-Implementierung, effizienter als JavaScript-basierte Lösungen.
+
+## Browser Unterstützung
+
+Die Popover API ist in modernen Browsern gut unterstützt, aber die Kompatibilität sollte geprüft werden.
+
+## Zusammenfassung
+
+Die Popover API vereinfacht das Erstellen von Popover-Elementen erheblich und ermöglicht es dir, moderne und zugängliche Webanwendungen zu entwickeln. Nutze auto für einfache Popovers und manual für Popovers, die mehr Kontrolle mit JavaScript benötigen.
+
+*   **Code-Hervorhebung:**  Sorge dafür, dass dein Markdown-Editor Code-Schnipsel korrekt hervorhebt.
+*   **Klarheit:** Verwende kurze, prägnante Sätze und vermeide unnötigen Fachjargon.
+*   **Relevanz:** Konzentriere dich auf das Wesentliche und die wichtigsten Anwendungsfälle.
+*   **Beispiele:** Einprägsame Beispiele helfen beim Verständnis und der schnellen Anwendung.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+<br><br>
+___
+<br><br>
+<br><br>
 
 
 # Tags
