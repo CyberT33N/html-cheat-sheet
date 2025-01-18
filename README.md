@@ -139,7 +139,96 @@ ___
 
 # Tags
 
-<br><br>
+<details><summary>Click to expand..</summary>
+
+
+
+
+
+## dialog
+
+<details><summary>Click to expand..</summary>
+
+
+Das <dialog>-Element stellt einen Dialogfeld-Mechanismus in HTML dar, der für modale oder nicht-modale Dialoge verwendet werden kann. Hier sind die wichtigsten Punkte:
+
+Verwendung
+
+    Syntax: <dialog> ... </dialog>
+    Attribut: 
+        open - Gibt an, ob der Dialog offen ist. Wenn dieses Attribut vorhanden ist, wird der Dialog angezeigt.
+
+
+Funktionen
+
+    Modale Dialoge: Mit dem showModal()-Methodenaufruf wird der Dialog modal, d.h., der Benutzer muss den Dialog schließen, bevor er mit dem Rest der Seite interagieren kann.
+    Nicht-modale Dialoge: Ohne showModal() oder mit show() ist der Dialog nicht-modal und der Benutzer kann weiterhin mit der Seite interagieren.
+
+
+Beispiel
+```html
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog Beispiel</title>
+</head>
+<body>
+    <button id="openDialog">Dialog öffnen</button>
+    <dialog id="myDialog">
+        <p>Dies ist ein Dialog.</p>
+        <button id="closeDialog">Schließen</button>
+    </dialog>
+
+    <script>
+        const dialog = document.getElementById('myDialog');
+        const openButton = document.getElementById('openDialog');
+        const closeButton = document.getElementById('closeDialog');
+
+        openButton.addEventListener('click', () => {
+            dialog.showModal(); // Modal öffnen
+        });
+
+        closeButton.addEventListener('click', () => {
+            dialog.close(); // Dialog schließen
+        });
+    </script>
+</body>
+</html>
+```
+
+Eigenschaften und Methoden
+
+    Methoden:
+        show() - Zeigt den Dialog als nicht-modal an.
+        showModal() - Zeigt den Dialog modal an.
+        close() - Schließt den Dialog.
+    Ereignisse:
+        close - Wird ausgelöst, wenn der Dialog geschlossen wird.
+
+
+Browserunterstützung
+
+    Unterstützung: Das <dialog>-Element wird von modernen Browsern unterstützt, jedoch gibt es Unterschiede, insbesondere bei der Unterstützung von modalen Dialogen. Es ist ratsam, die Browserunterstützung zu überprüfen und ggf. Fallbacks für ältere Browser zu implementieren.
+
+
+Hinweis: Das <dialog>-Element bietet eine native Methode zur Erstellung von Dialogen, die oft einfacher zu verwalten sind als Dialoge, die mit JavaScript und CSS erstellt wurden. Dennoch kann die Benutzererfahrung und das Aussehen mit zusätzlichem CSS angepasst und verbessert werden.
+
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -156,6 +245,7 @@ ___
 <object id="svg1" data="/static/image.svg" type="image/svg+xml"></object>
 ```
 
+</details>
 
 
 
