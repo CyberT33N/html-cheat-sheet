@@ -11,6 +11,8 @@ HTML Cheat Sheet with the most needed stuff..
 
 # API
 
+<details><summary>Click to expand..</summary>
+
 <br><br>
 
 ## Popover API
@@ -95,6 +97,27 @@ Die Popover API vereinfacht das Erstellen von Popover-Elementen erheblich und er
 *   **Beispiele:** Einprägsame Beispiele helfen beim Verständnis und der schnellen Anwendung.
 
 
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -118,7 +141,13 @@ ___
 
 <br><br>
 
+
+
+
+
 ## object
+
+<details><summary>Click to expand..</summary>
 
 <br><br>
 
@@ -146,18 +175,23 @@ ___
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 <br><br>
-__________________________________
-__________________________________
-<br><br>
 
+# svg
 
-
-
-
-<br><br>
-
-# SVG
+<details><summary>Click to expand..</summary>
 
 cbr><br>
 
@@ -214,6 +248,7 @@ cbr><br>
 ```
 
 
+</details>
 
 
 
@@ -240,18 +275,14 @@ cbr><br>
 
 
 
-
-
-
-
-<br><br>
-__________________________________
-__________________________________
-<br><br>
 
 
 
 ## video (https://www.w3schools.com/html/html5_video.asp)
+
+<details><summary>Click to expand..</summary>
+
+
 ```html
  <video autoplay muted loop playsinline preload="metadata" class="img-fluid rounded-1 img-fadeIn-1">
   <source src="./assets/videos/1.webm" type="video/webm">
@@ -280,6 +311,68 @@ function pauseVid() {
 }
 ```
 
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <br><br>
@@ -301,16 +394,122 @@ function pauseVid() {
 
 
 
-<br />
-<br />
 
 
+# inert
+- Das inert-Attribut in HTML ist ein relativ neues Feature, das verwendet wird, um ein Element und seine Nachkommen temporär zu deaktivieren. Hier sind einige wichtige Punkte dazu:
+
+<details><summary>Click to expand..</summary>
+
+Verwendung
+
+    Syntax: <element inert>Content</element>
+    Wert: Das Attribut ist ein boolescher Wert; seine bloße Präsenz aktiviert die Inertie.
+
+
+Funktion
+
+    Interaktion blockieren: Ein Element mit dem inert-Attribut kann nicht fokussiert, angeklickt oder anderweitig interagiert werden. Das gilt auch für Formularelemente, Links und andere interaktive Elemente innerhalb dieses Elements.
+    ARIA-Status: Ein inert-Element erhält implizit den ARIA-Status aria-hidden="true", wodurch es für assistive Technologien unsichtbar wird.
+
+
+Anwendungsfälle
+
+    Modale Dialoge: Beim Öffnen eines modalen Dialogs kann der Hintergrundinhalt mit inert versehen werden, um sicherzustellen, dass Benutzer nicht mit dem restlichen Inhalt interagieren können, bis der Dialog geschlossen wird.
+    Menüs und Navigation: Um sicherzustellen, dass bestimmte Teile der Benutzeroberfläche während bestimmter Interaktionen nicht zugänglich sind.
+
+
+Beispiel
+```html
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inert Beispiel</title>
+</head>
+<body>
+    <div>
+        <p>Dieser Text ist interagierbar.</p>
+        <button onclick="alert('Klick!')">Klick mich</button>
+    </div>
+    <div inert>
+        <p>Dieser Text ist nicht interagierbar.</p>
+        <button onclick="alert('Klick!')">Dieser Button funktioniert nicht</button>
+    </div>
+</body>
+</html>
+```
+
+Browserunterstützung
+
+    Unterstützung: Derzeit wird das inert-Attribut nicht von allen Browsern unterstützt. Es ist wichtig, dies zu testen oder alternative Methoden zu verwenden, um die gewünschte Benutzererfahrung zu gewährleisten.
+
+
+Hinweis: Da das inert-Attribut relativ neu ist, sollten Entwickler möglicherweise zusätzliche JavaScript-Methoden zur Sicherstellung der Kompatibilität verwenden, bis die Unterstützung weit verbreitet ist.
+
+
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
  _____________________________________________________
  _____________________________________________________
+<br><br>
 
 
-<br />
-<br />
+
 
 
 # Meta List
